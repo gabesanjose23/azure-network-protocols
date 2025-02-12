@@ -23,71 +23,70 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 <img src="Screenshot 2025-02-11 173108.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Step 1- We need to make a windows virtual machine,linux virtual machine and a ubuntu server 20.04.They also all need to be on the same network.
 </p>
 <br />
 
 <p>
 <img src="Screenshot 2025-02-11 181421.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Step 2- Login on the window machine by searching the remote connect and typing in the username and public IP address set to the virutal machine.Then go onto microsoft edge and search up www.wireshark.org.
 </p>
 <br />
 
 <p>
 <img src="Screenshot 2025-02-11 181924.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Step 3- Install it accept the terms and services and then search up the app and open it. 
 </p>
 <br />
 
 <p>
 <img src="Screenshot 2025-02-11 182304.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Step 4- open up the app and if you see ethernet with the line being draw this shows it's active click on the top left shark fin(colored blue).
 </p>
 <br />
 
 <p>
 <img src="Screenshot 2025-02-11 182424.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Step 5- Here you can see all the outgoing and incoming packets you can also stop wire shark with the red or reset it with the green fin.
 </p>
 <br />
 
 <p>
 <img src="Screenshot 2025-02-11 182841.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Step 6- Here I test out the connection to the machine by going into powershell and typing in the command (ping 8.8.8.8) .As you can see it will appear on wireshark.
 </p>
 <br />
 
 <p>
 <img src="Screenshot 2025-02-11 183345.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>Step 7- Here I am going to set a rule on the firewall for the network to block incoming traffic from the ICMP.You can configure this by going into the azure portal ,navigating into the linux VM and going into the network setting.
+</p>
+<br />
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="Screenshot 2025-02-11 183532.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>Step 8- Here are the setting I put to block traffic from the ICMP which I put in the command (ping 8.8.8.8 -t)this way it will continuously ping.
 </p>
 <br />
 
 <p>
 <img src="Screenshot 2025-02-11 184445.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Step 8- As you can see it says request timed out.Any time it tries to ping it will drop the packet this is because the rule that is set on the firewall is working.
 </p>
 <br />
+
 
 <p>
 <img src="Screenshot 2025-02-11 184622.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Step 9- You can also add search filter like the packet number, the time it was recieve,what protocol,IP address,etc.In this example you can see I add a DNS filter and it will only show me donmain names i searched for such as disney and microsoft edge.
 </p>
 <br />
