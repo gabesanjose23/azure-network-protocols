@@ -37,7 +37,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 <img src="Screenshot 2025-02-11 181924.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Step 3- Install it ,accept the terms and services,then search up the app and open it. 
+<p>Step 3- Install it ,accept the terms of services,then search up the app and open it. 
 </p>
 <br />
 
