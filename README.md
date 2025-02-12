@@ -87,6 +87,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 <img src="Screenshot 2025-02-11 184622.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Step 9- You can also add search filter like the packet number, the time it was recieve,what protocol,IP address,etc.In this example you can see I add a DNS filter and it will only show me donmain names i searched for such as disney and microsoft edge.
+<p>Step 9- You can also add search filters like the packet number, the time it was received,what protocol,IP address,etc.In this example you can see I add a DNS filter and it will only show me domain names I searched for such as disney and microsoft edge.
 </p>
 <br />
