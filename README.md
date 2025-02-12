@@ -44,7 +44,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 <img src="Screenshot 2025-02-11 182304.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Step 4- open up the app and if you see ethernet with the line being draw this shows it's active click on the top left shark fin(colored blue).
+<p>Step 4- Open up the app and if you see ethernet with the line being draw this shows it's active click on the top left shark fin(colored blue).
 </p>
 <br />
 
