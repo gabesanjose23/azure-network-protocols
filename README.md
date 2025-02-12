@@ -23,14 +23,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 <img src="Screenshot 2025-02-11 173108.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Step 1- We need to make a windows virtual machine,linux virtual machine and a ubuntu server 20.04.They also all need to be on the same network.
+<p>Step 1- We need to make a Windows virtual machine,Linux virtual machine and a Ubuntu server 20.04.They also all need to be on the same network.
 </p>
 <br />
 
 <p>
 <img src="Screenshot 2025-02-11 181421.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Step 2- Login on the window machine by searching the remote connect and typing in the username and public IP address set to the virutal machine.Then go onto microsoft edge and search up www.wireshark.org.
+<p>Step 2- Login on the Window machine by searching the remote connect and typing in the username and public IP address set to the virutal machine.Then go onto Microsoft Edge and search up www.wireshark.org.
 </p>
 <br />
 
@@ -51,7 +51,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 <img src="Screenshot 2025-02-11 182424.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Step 5- Here you can see all the outgoing and incoming packets you can also stop wire shark with the red or reset it with the green fin.
+<p>Step 5- Here you can see all the outgoing and incoming packets you can also stop Wireshark with the red or reset it with the green fin.
 </p>
 <br />
 
@@ -65,7 +65,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 <img src="Screenshot 2025-02-11 183345.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Step 7- Here I am going to set a rule on the firewall for the network to block incoming traffic from the ICMP.You can configure this by going into the azure portal ,navigating into the linux VM and going into the network setting.
+<p>Step 7- Here I am going to set a rule on the firewall for the network to block incoming traffic from the ICMP.You can configure this by going into the azure portal ,navigating into the Linux VM and going into the network setting.
 </p>
 <br />
 
@@ -87,6 +87,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 <img src="Screenshot 2025-02-11 184622.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Step 9- You can also add search filters like the packet number, the time it was received,what protocol,IP address,etc.In this example you can see I add a DNS filter and it will only show me domain names I searched for such as disney and microsoft edge.
+<p>Step 9- You can also add search filters like the packet number, the time it was received,what protocol,IP address,etc.In this example you can see I add a DNS filter and it will only show me domain names I searched for such as Disney and Microsoft Edge.
 </p>
 <br />
